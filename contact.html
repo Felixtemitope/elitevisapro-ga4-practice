@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Contact Elitevisapro</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header"><div class="container nav"><a class="logo" href="index.html">Elite<span>visapro</span></a><nav><a href="index.html">Home</a><a href="services.html">Visa Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><a class="btn btn-small" href="#consultation">Book Consultation</a></div></header>
+<main>
+<section class="page-hero"><div class="container"><p class="eyebrow">CONTACT</p><h1>Let's discuss your journey.</h1><p>Use the fictional details below to practice click and form tracking.</p></div></section>
+<section class="section" id="consultation"><div class="container contact-grid">
+<div><h2>Get in touch</h2><p>These links are intentionally included for GTM practice.</p><div class="contact-links"><a href="tel:+15550102020" data-contact="phone">📞 +1 (555) 010-2020</a><a href="mailto:hello@elitevisapro.example" data-contact="email">✉ hello@elitevisapro.example</a></div><div class="info-box"><strong>Practice only</strong><p>The phone number and email above are fictional test data.</p></div></div>
+<form class="form" id="lead-form"><label>Full Name<input type="text" name="name" required placeholder="John Smith"></label><label>Email Address<input type="email" name="email" required placeholder="john@example.com"></label><label>Service<select name="service"><option>Visa Assistance</option><option>Travel Planning</option><option>Document Review</option></select></label><label>Message<textarea name="message" rows="5" placeholder="Tell us what you need..."></textarea></label><button class="btn" type="submit">Request Consultation</button><p id="form-message" class="success" hidden>Thank you! Your practice form submission was recorded.</p></form>
+</div></section></main>
+<footer><div class="container footer"><div><a class="logo" href="index.html">Elite<span>visapro</span></a><p>Practice website for GA4 & GTM training.</p></div><div><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="about.html">About</a></div></div></footer>
+<script>
+document.getElementById('lead-form').addEventListener('submit', function(e){
+ e.preventDefault();
+ window.dataLayer = window.dataLayer || [];
+ window.dataLayer.push({event:'generate_lead', form_name:'consultation_form', service:this.service.value});
+ document.getElementById('form-message').hidden=false;
+ this.reset();
+});
+</script>
+</body></html>

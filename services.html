@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Visa & Travel Services | Elitevisapro</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header"><div class="container nav"><a class="logo" href="index.html">Elite<span>visapro</span></a><nav><a href="index.html">Home</a><a href="services.html">Visa Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><a class="btn btn-small" href="contact.html#consultation">Book Consultation</a></div></header>
+<main>
+<section class="page-hero"><div class="container"><p class="eyebrow">OUR SERVICES</p><h1>Travel & visa support</h1><p>Explore the practice services below. Each section gives you useful links and interactions to test in GTM.</p></div></section>
+<section class="section"><div class="container service-list">
+<article id="visa" class="service"><div class="service-number">01</div><div><h2>Visa Assistance</h2><p>Learn about common preparation steps, documentation, timelines, and planning considerations for international travel.</p><button class="btn" onclick="trackInterest('visa_assistance')">I'm Interested</button></div></article>
+<article id="travel" class="service"><div class="service-number">02</div><div><h2>Travel Planning</h2><p>Practice tracking engagement with travel planning information, destination content, and consultation calls to action.</p><button class="btn" onclick="trackInterest('travel_planning')">I'm Interested</button></div></article>
+<article id="documents" class="service"><div class="service-number">03</div><div><h2>Document Review</h2><p>Explore a fictional document-review service and practice measuring clicks on service-specific CTAs.</p><button class="btn" onclick="trackInterest('document_review')">I'm Interested</button></div></article>
+</div></section>
+<section class="section band"><div class="container centered"><h2>Ready to practice lead tracking?</h2><p>Use the consultation form to generate a realistic form-submission event.</p><a class="btn" href="contact.html#consultation" data-cta="services_consultation">Start Consultation</a></div></section>
+</main>
+<footer><div class="container footer"><div><a class="logo" href="index.html">Elite<span>visapro</span></a><p>Practice website for GA4 & GTM training.</p></div><div><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="about.html">About</a></div></div></footer>
+<script>
+function trackInterest(service) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({event:'service_interest', service_name:service});
+  alert('Practice event sent: service_interest (' + service + ')');
+}
+</script>
+</body></html>
